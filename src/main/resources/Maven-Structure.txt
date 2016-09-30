@@ -1,0 +1,49 @@
+手动创建Maven项目
+
+1.创建一个文件夹
+	kpp :文件夹名称
+
+2.创建pom.xml文件
+	pom.xml:
+	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	  <modelVersion>4.0.0</modelVersion>
+	  <!-- 项目包名 -->
+	  <groupId>com.k</groupId>
+	  <!-- 项目名称 -->
+	  <artifactId>kpp</artifactId>
+	  <packaging>war</packaging>
+	  <version>1.0-SNAPSHOT</version>
+	  <name>kpp Maven Webapp</name>
+	  <url>http://maven.apache.org</url>
+	  <dependencies>
+	    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <version>4.12</version>
+	      <scope>test</scope>
+	    </dependency>
+	  </dependencies>
+	  <build>
+	    <!-- 部署名称 -->
+	    <finalName>kpp</finalName>
+	  </build>
+	</project>
+
+3.创建资源文件夹
+	src\main\resources
+
+4.创建WEB-INF文件夹
+	src\main\webapp\WEB-INF
+
+5.创建 web.xml
+	src\main\webapp\WEB-INF\web.xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://java.sun.com/xml/ns/javaee" 
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+		id="WebApp_ID" 
+		version="3.0">
+	  <display-name>Archetype Created Web Application</display-name>
+	 </web-app>
+	

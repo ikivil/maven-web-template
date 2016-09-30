@@ -1,0 +1,5 @@
+pom中需要更改一下两处内容
+<!-- 项目名称 -->
+<artifactId>kpp</artifactId>
+<!-- 部署名称 -->
+<finalName>kpp</finalName>
